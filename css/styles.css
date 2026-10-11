@@ -1,0 +1,383 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: #f4f4f4;
+  height: 100%;
+}
+
+
+h1, h2, h3 {
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-slider {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.hero-slider .slide {
+  min-width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 20%;
+  left: 20px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(223, 11, 11, 0.7);
+}
+
+.slide-content h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.slide-content p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+
+.btn-cta {
+  padding: 12px 30px;
+  background-color: #2a9d8f;
+  color: white;
+  text-decoration: none;
+  border-radius: 100px;
+  font-size: 1.2rem;
+}
+
+.btn-cta:hover {
+  background-color: #219d79;
+}
+
+/* Services Section */
+.services {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 350px;
+  padding: 40px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.service-card p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Destinations Section */
+.destinations {
+  margin: 20px;
+  text-align: center;
+}
+
+.destination-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  justify-items: center;
+  margin-top: 20px;
+  align-items: stretch;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Form Styling */
+form {
+  background-color: #fff;
+  padding: 40px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 40px auto;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+ 
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #2a9d8f;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button {
+  background-color: #2a9d8f;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #219d79;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  margin-right: 15px;
+}
+
+footer a:last-child {
+  margin-right: 0;
+}
+
+footer a:hover {
+  color: #ff6200;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+
+/* Auth Links Styling */
+.auth-links {
+  display: flex;
+  justify-content: flex-start;  /* Aligns items to the left */
+  position: absolute;  /* Positions the auth section absolutely */
+  top: 20px;  /* Adjust the distance from the top */
+  left: 20px;  /* Adjust the distance from the left */
+  z-index: 10;  /* Ensure it's above other content */
+}
+
+.welcome-text {
+  margin-right: 15px;
+  font-size: 1.1rem;
+  color: #da094b;
+}
+
+/* Login Button Styling */
+.btn-login {
+  padding: 10px 25px;
+  background-color: #2a9d8f;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-left: 10px;
+}
+
+.btn-login:hover {
+  background-color: #219d79;
+  transform: translateY(-3px);
+}
+
+.btn-login:active {
+  transform: translateY(1px);
+}
+
+/* Logout Button Styling */
+.btn-logout {
+  padding: 10px 25px;
+  background-color: #e63946;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-left: 10px;
+}
+
+.btn-logout:hover {
+  background-color: #d52b1e;
+  transform: translateY(-3px);
+}
+
+.btn-logout:active {
+  transform: translateY(1px);
+}
+
